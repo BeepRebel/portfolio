@@ -1,0 +1,388 @@
+{
+    "basic_info": {
+      "description_header": "Hi",
+      "description": "👋 I'm Charvi Pahuja. I'm a sophomore at IIT Ropar pursuing B.Tech in Computer Science and Engineering. With a strong foundation in Data Structures, Algorithms, and Web Development, I’ve built full-stack applications and projects in graph theory and system simulation. As a proactive open-source contributor and a leader in multiple tech and cultural initiatives on campus, I thrive in both collaborative and high-impact environments. I love turning ideas into impactful technology. Let's catch up 🦋.",
+      "section_name": {
+        "about": "About me",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Education"
+      }
+    },
+    "projects": [
+      {
+        "title": "IdeaNest",
+        "startDate": "March 2025 - Ongoing",
+        "description": "Built a full-stack idea-sharing platform using the MERN stack, enabling users to submit, view, and interact with posts. Implemented user authentication with JWT, including login, registration, and secure route handling. Added key features such as a blog editor, profile editor, pagination, and dynamic rendering of idea posts. Styled responsive UI with Tailwind CSS to ensure seamless navigation and engagement across devices.",
+        "images": [
+          "images/ideanest.png",
+          "images/idea2.png"
+        ],
+        "url": "https://idea-nest-five.vercel.app/",
+        "technologies": [
+  {
+    "class": "devicon-react-original",
+    "name": "React"
+  },
+  {
+    "class": "devicon-tailwindcss-plain",
+    "name": "Tailwind CSS"
+  },
+  {
+    "class": "devicon-javascript-plain",
+    "name": "JavaScript"
+  },
+  {
+    "class": "devicon-nodejs-plain",
+    "name": "Node.js"
+  },
+  {
+    "class": "devicon-express-original",
+    "name": "Express"
+  },
+  {
+    "class": "devicon-mongodb-plain",
+    "name": "MongoDB"
+  }
+]
+
+      },
+      {
+        "title": "Newspulse",
+        "startDate": "June 2024",
+        "description": "Built a Laravel web app to display top 20 Mumbai news articles from Times of India, refreshing every 24 hours. Added search, sorting, and pagination, reducing navigation time by 50%. Integrated a dictionary with search, meanings, audio pronunciations using an external API. Designed secure login/signup with JS-based validation ensuring full security compliance.",
+        "images": [
+          "images/newspulse.png",
+          "images/news2.png",
+          "images/news3.png"
+        ],
+        "url": "https://github.com/BeepRebel/NEWSPULSE.git",
+        "technologies": [
+  {
+    "class": "devicon-javascript-plain",
+    "name": "JavaScript"
+  },
+  {
+    "class": "devicon-html5-plain",
+    "name": "HTML"
+  },
+  {
+    "class": "devicon-css3-plain",
+    "name": "CSS"
+  },
+  {
+    "class": "devicon-php-plain",
+    "name": "PHP"
+  },
+  {
+    "class": "devicon-laravel-plain",
+    "name": "Laravel"
+  },
+  {
+    "class": "fas fa-book",
+    "name": "Dictionary API"
+  }
+]
+
+      },
+      {
+        "title": "RiscVSim",
+        "startDate": "Mar 2025 – Apr 2025",
+        "description": "Designed a RISC-V simulator supporting both basic and 5-stage pipelined modes with data forwarding, hazard detection, and 1-bit branch prediction. Built a custom RV32I assembler and dual-mode GUI/CLI to visualize pipeline flow, stalls, and memory/register state. Added features like configurable knobs, checkpointing, and cycle-accurate performance analytics.",
+        "images": [
+          "images/riscv.png"
+        ],
+        "url": "https://github.com/https://github.com/BeepRebel/CS204_Project.git",
+        "technologies": [
+  {
+    "class": "devicon-cplusplus-plain",
+    "name": "C++"
+  },
+  {
+    "class": "devicon-python-plain",
+    "name": "Python"
+  },
+  {
+    "class": "fas fa-desktop",
+    "name": "Tkinter"
+  }
+]
+
+      },
+      {
+        "title": "Social Netwok Graph",
+        "startDate": "April 2024 - May 2024",
+        "description": "Applied PageRank via Random Walks on impression graph to find top leaders in the batch. Built a recommendation system using matrix methods and least squares, validated with Jaccard similarity. Identified key influencers using centrality metrics, supported by simulation and real-world interpretation.",
+        "images": [
+          
+          "images/sg2.gif",
+          "images/sg.png",
+          "images/sg3..png"
+        ],
+        "url": "https://github.com/BeepRebel/Social-network---Graph-analysis/tree/main",
+        "technologies": [
+  {
+    "class": "devicon-python-plain",
+    "name": "Python"
+  },
+  {
+    "class": "fas fa-table",
+    "name": "Pandas"
+  },
+  {
+    "class": "fas fa-square-root-alt",
+    "name": "NumPy"
+  },
+  {
+    "class": "fas fa-project-diagram",
+    "name": "NetworkX"
+  }
+]
+
+
+
+      },
+       {
+        "title": "ISMP IIT ROPAR",
+        "startDate": "April 2024 - May 2024",
+        "description": "As a member of the web development team, I collaborated in creating a fully functional website showcasing current and past mentors and secretaries. It has an integrated blog section covering topics such as college life, campus events, and more, aimed at providing valuable insights to students and aspirants. An Excel-based update system was implemented to maintain and display the ISMP schedule. It was also ensured the website was optimized for search engines and performed efficiently across different devices to enhance user experience.",
+        "images": [
+          
+          "images/ismp.png",
+          "images/ismp2.png",
+          "images/ismp3.png",
+          "images/ismp4.png"
+        ],
+        "url": "https://www.iitrpr.ac.in/ismp/",
+        "technologies": [
+  {
+    "class": "devicon-html5-plain",
+    "name": "HTML"
+  },
+  {
+    "class": "devicon-css3-plain",
+    "name": "CSS"
+  },
+  {
+    "class": "devicon-php-plain",
+    "name": "PHP"
+  },
+  {
+    "class": "devicon-javascript-plain",
+    "name": "JavaScript"
+  },
+  {
+    "class": "devicon-mysql-plain",
+    "name": "MySQL"
+  },
+  {
+    "class": "fas fa-server",
+    "name": "XAMPP"
+  },
+  {
+    "class": "devicon-jquery-plain",
+    "name": "jQuery"
+  }
+]
+       },
+       {
+        "title": "Zeitgeist",
+        "startDate": "June 2025 - Ongoing",
+        "description": "As the Head of the Web Development Team for Zeitgeist, the annual cultural fest of IIT Ropar, I led and coordinated a team of developers across various domains to maintain and enhance the official festival website. The platform serves as the central hub for event registration, announcements, schedules, and updates for thousands of participants. I actively guided co-heads, delegated tasks, and reviewed contributions to ensure consistency and timely updates.",
+        "images": [
+          
+          "images/zeitgeist.png",
+          "images/zeitgeist2.png"
+        ],
+        "url": "https://www.zeitgeist.org.in/",
+        "technologies": [
+  {
+    "class": "devicon-typescript-plain",
+    "name": "TypeScript"
+  },
+  {
+    "class": "devicon-javascript-plain",
+    "name": "JavaScript"
+  },
+  {
+    "class": "devicon-nodejs-plain",
+    "name": "Node.js"
+  },
+  {
+    "class": "devicon-react-original",
+    "name": "React"
+  },
+  {
+    "class": "devicon-css3-plain",
+    "name": "CSS"
+  }
+]
+
+       },
+       {
+        "title": "Image Classifier",
+        "startDate": "May 2024",
+        "description": "Using the Sequential model of Keras under TensorFlow, created a neural network with layers like Dense, Conv2D, Flatten, Dropout, MaxPooling2D, etc., to train a model to identify images of cats and dogs, achieving 80% accuracy.",
+        "images": [
+          
+          "images/cat.jpg",
+          "images/dog.jpg"
+        ],
+        "url": "https://colab.research.google.com/drive/1X8I4q1e2RmeyEpLQfjjaMsHFJhFch0HW?usp=sharing",
+        "technologies": [
+  {
+    "class": "devicon-python-plain",
+    "name": "Python"
+  },
+  {
+    "class": "devicon-tensorflow-original",
+    "name": "TensorFlow"
+  },
+  {
+    "class": "devicon-keras-plain",
+    "name": "Keras"
+  },
+  {
+    "class": "fas fa-network-wired",
+    "name": "Neural Network Layers"
+  }
+]
+
+
+       },
+       {
+        "title": "Sentiment Analysis",
+        "startDate": "May 2024 - June 2024",
+        "description": "Developed and implemented a sentiment analysis framework using hierarchical reinforcement learning, integrating various NLP tools and achieving significant performance metrics. The goal was to investigate the advantages of HRL approach over a simple Reinforcement Learning which was achieved as 72% accuracy was obtained.",
+        "images": [
+          
+          "images/sent.png",
+          "images/sentiment.png"
+        ],
+        "url": "https://github.com/BeepRebel/Sentiment-analysis",
+        "technologies": [
+  {
+    "class": "devicon-tensorflow-original",
+    "name": "TensorFlow"
+  },
+  {
+    "class": "devicon-python-plain",
+    "name": "Python"
+  },
+  {
+    "class": "fas fa-robot",
+    "name": "Reinforcement Learning"
+  },
+  {
+    "class": "fas fa-language",
+    "name": "Natural Language Processing"
+  }
+]
+
+
+
+       },
+       {
+        "title": "Geographical Region Statistics",
+        "startDate": "Oct 2024 - Nov 2024",
+        "description": "Developed and implemented a sentiment analysis framework using hierarchical reinforcement learning, integrating various NLP tools and achieving significant performance metrics. The goal was to investigate the advantages of HRL approach over a simple Reinforcement Learning which was achieved as 72% accuracy was obtained.",
+        
+        "images": [
+          
+          "images/segment.png",
+          "images/geo.png"
+        ],
+        "url": "https://2-dsegment-tree.vercel.app/",
+        "technologies": [
+  {
+    "class": "devicon-c-plain",
+    "name": "C"
+  },
+  {
+    "class": "fas fa-database",
+    "name": "Data Structures"
+  },
+  {
+    "class": "fas fa-cogs",
+    "name": "Algorithms"
+  },
+  {
+    "class": "devicon-react-original",
+    "name": "React"
+  },
+  {
+    "class": "devicon-vitejs-plain",
+    "name": "Vite"
+  }
+]
+
+
+
+
+       },
+        {
+        "title": "C Compiler",
+        "startDate": "April 2025 - May 2025",
+        "description": "Developed an automated code translator that converts C programs into Promela, applying core Parsing, Lexical Analysis, and Syntax mapping principles aligned with programming language pragmatics. Implemented regular-expression-based parsing algorithms in C++ to map high-level C constructs like loops, conditionals, and function calls into Promela equivalents, preserving syntactic and semantic correctness.",
+        
+        "images": [
+          
+          "images/lex.png"
+        ],
+        "url": "https://2-dsegment-tree.vercel.app/",
+        "technologies": [
+  {
+    "class": "devicon-c-plain",
+    "name": "C"
+  },
+  {
+    "class": "fas fa-scroll",
+    "name": "Lex"
+  },
+  {
+    "class": "fas fa-project-diagram",
+    "name": "Yacc"
+  },
+  {
+    "class": "fas fa-code",
+    "name": "RegEx"
+  }
+
+]}
+    ],
+    "experience": [
+      {
+        "company": "Bachelor of Technology",
+        "title": "IIT Ropar",
+        "years": "08/2023 - present",
+        "mainTech": [
+          "8.15 CGPA"
+        ],
+        "technologies": [
+          
+        ]
+      },
+      {
+        "company": "Class 12",
+        "title": "Modern Vidya Niketan",
+        "years": "2022 - 2023",
+        "mainTech": [
+          "96%"
+        ],
+        "technologies": [
+          
+        ]
+      },
+      {
+        "company": "Class 10",
+        "title": "St. Anthony's Sec. School",
+        "years": "2020 - 2021",
+        "mainTech": [
+          "99.6%"
+        ],
+        "technologies": [
+          
+        ]
+      }
+    ]
+  }
