@@ -41,9 +41,20 @@ h1.section-title::after {
 
 
 .title-styles {
-	font-family: 'Raleway', sans-serif;
-	font-size: 200%;
+  font-family: 'Raleway', sans-serif;
+  font-size: 200%;
+  text-align: center;
+  margin-top: 1rem;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 120%; // Adjust this value as needed
+  }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 100%; // For smaller phones
+  }
 }
+
 
 .header-icon {
 	height: 150px;
