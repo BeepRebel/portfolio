@@ -31,27 +31,28 @@ class About extends Component {
               <div className="polaroid">
                 <span style={{ cursor: "auto" }}>
                   <img
-                    height="250px"
-                    src={profilepic}
-                    alt="Avatar placeholder"
-                  />
-                  <a
-  href="https://github.com/BeepRebel"
-  target="_blank"
-  rel="noopener noreferrer"
-  style={{ margin: "9% 5% 0 5%", fontSize: "3.6rem", color: "#333" }}
->
-  <i className="fab fa-github"></i>
-</a>
+  height="250px"
+  src={profilepic}
+  alt="Avatar placeholder"
+/>
+<div className="social-icons">
+  <a
+    href="https://github.com/BeepRebel"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="fab fa-github"></i>
+  </a>
+  <a
+    href="https://linkedin.com/in/charvipahuja"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <i className="fab fa-linkedin"></i>
+  </a>
+</div>
 
-<a
-  href="https://linkedin.com/in/charvipahuja"
-  target="_blank"
-  rel="noopener noreferrer"
-  style={{ margin: "9% 5% 0 5%", fontSize: "3.6rem", color: "#0077b5" }}
->
-  <i className="fab fa-linkedin"></i>
-</a>
+                  
 
 
 
