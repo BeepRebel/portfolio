@@ -24,7 +24,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
@@ -204,3 +204,29 @@
             margin: 0 auto;
             line-height: 1.6;
         }
+
+        .menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    /* ... */
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+}

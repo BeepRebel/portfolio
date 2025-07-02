@@ -99,7 +99,7 @@ class Header extends Component {
     Download CV
   </a>
   <a
-    href="https://your-codefolio-link.vercel.app"  
+    href="https://codolio.com/profile/BeepRebel"  
     target="_blank"
     rel="noopener noreferrer"
     className="btn btn-outline-primary btn-lg"
