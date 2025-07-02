@@ -18,6 +18,27 @@ html {
 .title-container {
 	height: 50px;
 }
+h1.section-title {
+  font-size: 3rem !important;
+  font-weight: 700 !important;
+  color: #1f1f1f;
+  text-align: center;
+  margin: 3rem 0 2rem !important;
+  font-family: "Poppins", "Segoe UI", sans-serif !important;
+  letter-spacing: 1px !important;
+  position: relative !important;
+}
+
+h1.section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px !important;
+  background: #ff6b6b;
+  margin: 12px auto 0 !important;
+  border-radius: 2px !important;
+}
+
 
 .title-styles {
 	font-family: 'Raleway', sans-serif;
@@ -95,7 +116,7 @@ body {
 }
 
 header h1 {
-	font-size: 400%;
+	font-size: 300%;
 	text-align: center;
 	font-weight: 600 !important;
 	color: #353239;
@@ -402,6 +423,8 @@ section {
   padding: 100px 20px;
 }
 
+
+
 .section-title {
   font-size: 2.8rem;
   color: var(--primary-color);
@@ -427,7 +450,7 @@ footer {
 	min-height: 100px;
 	width: 100%;
 	overflow: hidden;
-	font-size: 14px;
+	font-size: 20px;
 	color: white;
 	position: relative;
 	text-align: center;
@@ -445,7 +468,7 @@ footer a:focus {
 
 .social-links {
 	margin-top: 50px;
-	font-size: 22px;
+	font-size: 30px;
 }
 
 .btn {

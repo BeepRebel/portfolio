@@ -25,7 +25,7 @@ class App extends Component {
   applyPickedLanguage(pickedLanguage, oppositeLangIconId) {
     this.swapCurrentlyActiveLanguage(oppositeLangIconId);
     document.documentElement.lang = pickedLanguage;
-    var resumePath =
+    const resumePath =
       document.documentElement.lang === window.$primaryLanguage
         ? process.env.PUBLIC_URL + "/res_primaryLanguage.json"
         : process.env.PUBLIC_URL + "/res_secondaryLanguage.json";
@@ -34,13 +34,15 @@ class App extends Component {
   }
 
   swapCurrentlyActiveLanguage(oppositeLangIconId) {
-    var pickedLangIconId =
+    const pickedLangIconId =
       oppositeLangIconId === window.$primaryLanguageIconId
         ? window.$secondaryLanguageIconId
         : window.$primaryLanguageIconId;
+
     document
       .getElementById(oppositeLangIconId)
       .removeAttribute("filter", "brightness(40%)");
+
     document
       .getElementById(pickedLangIconId)
       .setAttribute("filter", "brightness(40%)");
@@ -48,8 +50,14 @@ class App extends Component {
 
   componentDidMount() {
     this.loadSharedData();
-    AOS.init({ duration: 1000, once: true });
-    this.loadResumeFromPath(process.env.PUBLIC_URL + "/res_primaryLanguage.json");
+    this.loadResumeFromPath(
+      process.env.PUBLIC_URL + "/res_primaryLanguage.json"
+    );
+
+    // Delay AOS init to ensure all content loads
+    setTimeout(() => {
+      AOS.init({ duration: 1000, once: true });
+    }, 500);
   }
 
   loadResumeFromPath(path) {
@@ -58,7 +66,9 @@ class App extends Component {
       dataType: "json",
       cache: false,
       success: function (data) {
-        this.setState({ resumeData: data });
+        this.setState({ resumeData: data }, () => {
+          AOS.refresh(); // Refresh AOS after loading data
+        });
       }.bind(this),
       error: function (xhr, status, err) {
         alert(err);
@@ -72,8 +82,10 @@ class App extends Component {
       dataType: "json",
       cache: false,
       success: function (data) {
-        this.setState({ sharedData: data });
-        document.title = `${data.basic_info.name}`;
+        this.setState({ sharedData: data }, () => {
+          document.title = `${data.basic_info.name}`;
+          AOS.refresh(); // Refresh AOS after loading data
+        });
       }.bind(this),
       error: function (xhr, status, err) {
         alert(err);
@@ -82,52 +94,53 @@ class App extends Component {
   }
 
   render() {
-    return (
-      <div>
-        <Navbar />
+  return (
+    <div>
+      <Navbar />
 
-        <div data-aos="fade-up">
-          <Header sharedData={this.state.sharedData.basic_info} />
-        </div>
-
-        <div data-aos="fade-down">
-          <About
-            resumeBasicInfo={this.state.resumeData.basic_info}
-            sharedBasicInfo={this.state.sharedData.basic_info}
-          />
-        </div>
-
-        <div data-aos="zoom-in">
-          <Projects
-            resumeProjects={this.state.resumeData.projects}
-            resumeBasicInfo={this.state.resumeData.basic_info}
-          />
-        </div>
-
-        <div data-aos="flip-up">
-          <Skills
-            sharedSkills={this.state.sharedData.skills}
-            resumeBasicInfo={this.state.resumeData.basic_info}
-          />
-        </div>
-
-        <div data-aos="fade-right">
-          <Experience
-            resumeExperience={this.state.resumeData.experience}
-            resumeBasicInfo={this.state.resumeData.basic_info}
-          />
-        </div>
-
-        <div data-aos="zoom-out">
-          <Contact />
-        </div>
-
-        <div data-aos="fade-up">
-          <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
-        </div>
+      <div data-aos="fade-up">
+        <Header sharedData={this.state.sharedData.basic_info} />
       </div>
-    );
-  }
+
+      <div data-aos="fade-down">
+        <About
+          resumeBasicInfo={this.state.resumeData.basic_info}
+          sharedBasicInfo={this.state.sharedData.basic_info}
+        />
+      </div>
+
+      <div data-aos="zoom-in">
+        <Projects
+          resumeProjects={this.state.resumeData.projects}
+          resumeBasicInfo={this.state.resumeData.basic_info}
+        />
+      </div>
+
+      <div data-aos="flip-up">
+        <Skills
+          sharedSkills={this.state.sharedData.skills}
+          resumeBasicInfo={this.state.resumeData.basic_info}
+        />
+      </div>
+
+      <div data-aos="fade-right">
+        <Experience
+          resumeExperience={this.state.resumeData.experience}
+          resumeBasicInfo={this.state.resumeData.basic_info}
+        />
+      </div>
+
+      <div data-aos="zoom-out">
+        <Contact />
+      </div>
+
+      <div data-aos="fade-up">
+        <Footer sharedBasicInfo={this.state.sharedData.basic_info} />
+      </div>
+    </div>
+  );
+}
+
 }
 
 export default App;
