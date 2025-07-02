@@ -7,8 +7,26 @@ html {
 	-webkit-font-smoothing: antialiased;
 	margin: 0;
 	padding: 0;
+
+	@media only screen and (max-width: 768px) {
+    font-size: 70%; // Adjust this value as needed
+  }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 50%; // For smaller phones
+  }
 }
 
+
+.tech{
+	@media only screen and (max-width: 768px) {
+    font-size: 70%; // Adjust this value as needed
+  }
+
+  @media only screen and (max-width: 480px) {
+    font-size: 50%; // For smaller phones
+  }
+}
 .aligner {
 	display: flex;
 	align-items: center;
@@ -371,6 +389,7 @@ header h1 {
 }
 
 .vertical-timeline-element-date {
+	font-size:large!important;
 	padding: 0 !important;
 	margin: 0 !important;
 }
@@ -380,6 +399,9 @@ header h1 {
 		font-size: 170%;
 		margin-top: 27%;
 		text-align: center;
+	}
+	.vertical-timeline-element-date{
+		font-size: medium!important;
 	}
 }
 

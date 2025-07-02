@@ -96,7 +96,7 @@ class ProjectDetailsModal extends Component {
             </h3>
             <p className="modal-description">{description}</p>
             <div className="col-md-12 text-center">
-              <ul className="list-inline mx-auto">{tech}</ul>
+              <ul className="list-inline mx-auto tech">{tech}</ul>
             </div>
           </div>
         </div>

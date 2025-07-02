@@ -25,34 +25,47 @@ const Contact = () => {
         </p>
 
         <form className="contact-form" onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="name"
-            placeholder="Enter your name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-          <input
-            type="email"
-            name="email"
-            placeholder="Enter your email"
-            value={formData.email}
-            onChange={handleChange}
-            required
-          />
-          <textarea
-            name="message"
-            placeholder="Enter your message"
-            rows="5"
-            value={formData.message}
-            onChange={handleChange}
-            required
-          ></textarea>
-          <button type="submit" className="contact-button">
-            Send
-          </button>
-        </form>
+  <div className="form-row">
+    <div className="form-group">
+      <input
+        type="text"
+        name="name"
+        placeholder="Enter your name"
+        value={formData.name}
+        onChange={handleChange}
+        required
+      />
+    </div>
+    <div className="form-group">
+      <input
+        type="email"
+        name="email"
+        placeholder="Enter your email"
+        value={formData.email}
+        onChange={handleChange}
+        required
+      />
+    </div>
+  </div>
+
+  <div className="form-group full-width">
+    <textarea
+      name="message"
+      placeholder="Enter your message"
+      rows="5"
+      value={formData.message}
+      onChange={handleChange}
+      required
+    ></textarea>
+  </div>
+
+  <div className="form-group full-width" style={{ textAlign: "center" }}>
+    <button type="submit" className="contact-button">
+      Send
+    </button>
+  </div>
+</form>
+
       </div>
     </section>
   );
